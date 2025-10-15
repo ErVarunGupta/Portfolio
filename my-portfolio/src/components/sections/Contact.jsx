@@ -99,6 +99,7 @@ const ContactButton = styled.input`
   margin-top: 2px;
   border-radius: 12px;
   border: none;
+  cursor: pointer;
   color: ${({ theme }) => theme.text_primary};
   font-size: 18px;
   font-weight: 600;
@@ -110,10 +111,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_tox7kqs",
-        "template_nv7k7mj",
+        "service_xab43dh",
+        "template_ij7p77f",
         form.current,
-        "SybVGsYS52j2TfLbi"
+        "4tOkeaf8XrYqbcttV"
       )
       .then(
         (result) => {
